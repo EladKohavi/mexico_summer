@@ -89,8 +89,8 @@ jobs:
                 filter: 'latest'
               });
               core.info(`existing: ${JSON.stringify(existing)}`);
-              core.info(`if: ${JSON.stringify(existing.data && existing.data.length)}`);
-              if(existing.data && existing.data.length) {
+              core.info(`if: ${JSON.stringify(existing.data && existing.data.check_runs.length)}`);
+              if(existing.data && existing.data.check_runs.length) {
                 core.info(`im here`);
                 const updated = await github.checks.update({
                   owner: process.env.OWNER,
