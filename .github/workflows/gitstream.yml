@@ -95,7 +95,7 @@ jobs:
                 const updated = await github.checks.update({
                   owner: process.env.OWNER,
                   repo: process.env.REPO,
-                  check_run_id: existing.data[0].id,
+                  check_run_id: existing.data.check_runs[0].id,
                   status: 'completed',
                   conclusion: 'failure'
                 });
