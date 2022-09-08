@@ -89,7 +89,9 @@ jobs:
                 filter: 'latest'
               });
               core.info(`existing: ${JSON.stringify(existing)}`);
+              core.info(`if: ${JSON.stringify(existing.data && existing.data.length)}`);
               if(existing.data && existing.data.length) {
+                core.info(`im here`);
                 const updated = await github.checks.update({
                   owner: process.env.OWNER,
                   repo: process.env.REPO,
@@ -97,6 +99,7 @@ jobs:
                   status: 'completed',
                   conclusion: 'failure'
                 });
+                core.info(`and here`);
                 core.info(`done: ${JSON.stringify(updated)}`);
               }
             } catch (err) {
