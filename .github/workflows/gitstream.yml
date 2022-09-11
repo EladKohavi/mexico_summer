@@ -32,7 +32,7 @@ jobs:
     name: gitStream workflow
     steps:
       - name: Evaluate Rules
-        uses: linear-b/gitstream-github-action@vElad
+        uses: linear-b/gitstream-github-action@vElad1
         id: rules-engine
         continue-on-error: true
         with:
