@@ -32,9 +32,8 @@ jobs:
     name: gitStream workflow
     steps:
       - name: Evaluate Rules
-        uses: linear-b/gitstream-github-action@vElad7
+        uses: linear-b/gitstream-github-action@v1
         id: rules-engine
-        continue-on-error: true
         with:
           full_repository: ${{ github.event.inputs.full_repository }}
           head_ref: ${{ github.event.inputs.head_ref }}
