@@ -13,3 +13,11 @@ automations:
       - action: add-labels@v1
         args:
           labels: ["big_size"]
+  mark_color_pr:
+    if:
+      - {{ branch.diff.size > 0 }}
+    run:
+      - action: add-label@v1
+        args:
+          label: "color_pr",
+          color: a2eeef"
