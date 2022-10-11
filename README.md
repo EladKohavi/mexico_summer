@@ -1,3 +1,3 @@
 # mexico_summer
 
-Holas
+This is a readme file.
