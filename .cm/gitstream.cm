@@ -19,5 +19,5 @@ automations:
     run:
       - action: add-label@v1
         args:
-          label: "color_pr",
+          label: "color_pr"
           color: a2eeef"
