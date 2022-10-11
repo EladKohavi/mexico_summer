@@ -15,7 +15,7 @@ automations:
           labels: ["big_size"]
   mark_color_pr:
     if:
-      - {{ branch.diff.size == 0 }}
+      - {{ branch.diff.size == 2 }}
     run:
       - action: add-label@v1
         args:
@@ -23,7 +23,7 @@ automations:
           color: "#dcd0ff"
   mark_pretty_pr:
     if:
-      - {{ branch.diff.size == 1 }}
+      - {{ branch.diff.size == 3 }}
     run:
       - action: add-label@v1
         args:
