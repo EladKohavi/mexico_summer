@@ -33,3 +33,7 @@ automations:
         args:
           label: "pretty_label"
           color: "#df10ff"
+      - action: request-changes@v1
+        args:
+          comment: |
+            You have used deprected API `oldFetch`, use `newFetch` instead.
