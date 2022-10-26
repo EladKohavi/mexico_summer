@@ -1,1 +1,8 @@
 automations:
+  mark_big_pr:
+    if:
+      - {{ branch.diff.size > 100 }}
+    run:
+      - action: add-labels@v1
+        args:
+          labels: ["big_size"]
