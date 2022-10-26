@@ -15,7 +15,7 @@ automations:
           labels: ["big_size"]
   mark_color_pr:
     if:
-      - {{ branch.diff.size == 3 }}
+      - {{ branch.diff.size == 2 }}
     run:
       - action: add-label@v1
         args:
@@ -27,7 +27,7 @@ automations:
             You have used deprected API `oldFetch`, use `newFetch` instead.
   mark_pretty_pr:
     if:
-      - {{ branch.diff.size == 4 }}
+      - {{ branch.diff.size == 3 }}
     run:
       - action: add-label@v1
         args:
