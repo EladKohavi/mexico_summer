@@ -1,7 +1,7 @@
 automations:
   mark_good_pr:
     if:
-      - {{ branch.diff.size < 100 }}
+      - {{ branch.diff.size > 100 }}
     run:
       - action: add-labels@v1
         args:
