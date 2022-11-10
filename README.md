@@ -1,3 +1,3 @@
 # mexico_summer
 
-Holas
+Hello, and welcome to mexico summer - happening this January ...
