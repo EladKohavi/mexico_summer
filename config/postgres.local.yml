@@ -1,0 +1,3 @@
+CRED:
+  GS_DB_USERNAME: postgres
+  GS_DB_PASSWORD: gspass

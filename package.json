@@ -1,0 +1,13 @@
+{
+  "name": "mexico-summer",
+  "version": "1.0.0",
+  "description": "Repository meant for testing",
+  "author": "Elad K",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && tsc"
+  },
+  "dependencies": {
+    "octokit": "^2.0.10"
+  }
+}

@@ -1,0 +1,18 @@
+.serverless
+
+# node
+node_modules
+build
+npm-debug.log
+.DS_Store
+
+.npmrc
+.idea/
+src/linpy/
+linflux-client/
+.build/
+*.map
+
+# influx
+influxdb_data/
+postgresql_data

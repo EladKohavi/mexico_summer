@@ -1,0 +1,15 @@
+# this will be set by the sls-offline before the .env parsing
+ENV: local
+NODE_ENV: development
+AWS_REGION: us-west-1
+GS_WEBHOOKS_Q_URL: http://sqs:9324/queue/gitstream-webhooks-github-q
+GS_ACTIONS_GITHUB_Q_URL: http://sqs:9324/queue/gitstream-actions-github-q
+GITSTREAM_RULES_RESOLVER_URL: http://elad-resolver.ngrok.io/api/v1/gitstream/resolve
+GITSTREAM_ANALYTICS_URL: http://shaked.ngrok.io/analytics
+# GH_APP_ID: 228006 # dev app
+# GH_APP_ID: 224159 # Oriel local app
+# GH_APP_ID: 228006
+
+# Elad-local app
+GH_APP_ID: 230639
+GH_APP_USER_ID: 111737457

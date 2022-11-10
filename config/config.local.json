@@ -1,0 +1,21 @@
+{
+  "VPC": "-",
+  "SUBNET1": "-",
+  "SUBNET2": "-",
+  "SEC_GROUP": "-",
+  "REGION": "us-west-1",
+  "DD_FORWARDER_ARN": "-",
+  "AMPLITUDE_HTTP_API_URL": "https://api.amplitude.com/2/httpapi",
+  "GS_AMPLITUDE_API_KEY": "123",
+  "SLACK_GITSTREAM_USAGE_INCOMING_WEBHOOK": "https://hooks.slack.com/services/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",
+  "SLACK_GITSTREAM_INSTALLS_INCOMING_WEBHOOK": "https://hooks.slack.com/services/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",
+  "DD_API_KEY": "123",
+  "POSTGRES_DB_HOST": "host.docker.internal",
+  "POSTGRES_DB_NAME": "gitstream",
+  "POSTGRES_DB_PORT": 5435,
+  "REPO_OWNER": "EladKohavi",
+  "REPO_NAME": "mexico_summer",
+  "CURRENT_BRANCH": "e2e-branch",
+  "BASE_BRANCH": "master",
+  "INSTALLATION_ID": "30181675"
+}

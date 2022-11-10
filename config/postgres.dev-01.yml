@@ -1,0 +1,1 @@
+CRED: ${ssm:/aws/reference/secretsmanager/default/DB-init}
