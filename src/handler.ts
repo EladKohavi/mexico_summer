@@ -39,10 +39,11 @@ export const handler = async (event) => {
       INSTALLATION_ID
     );
 
+    //extract to a different method that is being called at the end of the workflow
     let allPassed = await getChecksStatus();
 
     while (!allPassed) {
-      sleeps(100);
+      //sleep?
       allPassed = await getChecksStatus();
     }
 
