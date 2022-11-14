@@ -1,5 +1,4 @@
 # mexico_summer
 
 Hello, and welcome to mexico summer:
-happening this January ...
-treetr
+happening this January ... :)
