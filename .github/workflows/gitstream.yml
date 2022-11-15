@@ -32,7 +32,7 @@ jobs:
     name: gitStream workflow
     steps:
       - name: Evaluate Rules
-        uses: linear-b/gitstream-github-action@v1
+        uses: linear-b/gitstream-github-action@elad-tag
         id: rules-engine
         with:
           full_repository: ${{ github.event.inputs.full_repository }}
