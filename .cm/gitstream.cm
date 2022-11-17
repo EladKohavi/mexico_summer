@@ -23,7 +23,10 @@ automations:
           color: "#dcd0ff"
       - action: add-reviewers@v1
         args:
-          reviewers: [EladKohavi]
+          reviewers: ["EladKohavi", "yeelali14"]
+      - action: require-reviewers@v1
+        args:
+          reviewers: ["EladKohavi", "yeelali14"]
       - action: request-changes@v1
         args:
           comment: |
