@@ -8,7 +8,7 @@ automations:
           reviewers: ["EladKohavi", "yeelali14"]
       - action: add-labels@v1
         args:
-          label: {{ estimatedReviewTime }}
+          label: "{{ branch | estimatedReviewTime }} time"
   mark_big_pr:
     if:
       - {{ branch.diff.size > 100 }}
