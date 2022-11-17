@@ -21,6 +21,9 @@ automations:
         args:
           label: "color_label"
           color: "#dcd0ff"
+      - action: add-reviewers@v1
+        args:
+          reviewers: [EladKohavi]
       - action: request-changes@v1
         args:
           comment: |
