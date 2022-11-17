@@ -6,6 +6,9 @@ automations:
       - action: add-labels@v1
         args:
           labels: ["good_size"]
+      - action: add-reviewers@v1
+        args:
+          reviewers: ["EladKohavi", "yeelali14"]
   mark_big_pr:
     if:
       - {{ branch.diff.size > 100 }}
@@ -34,6 +37,3 @@ automations:
           label: "pretty_label"
           color: "#df10ff"
       - action: approve@v1
-      - action: add-reviewers@v1
-        args:
-          reviewers: ["EladKohavi", "yeelali14"]
