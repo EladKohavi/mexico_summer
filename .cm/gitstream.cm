@@ -16,7 +16,7 @@ automations:
     run:
       - action: add-labels@v1
         args:
-          labels: ["big_size"]
+          labels: ["moshe_size"]
   mark_color_pr:
     if:
       - {{ branch.diff.size == 3 }}
