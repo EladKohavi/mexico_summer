@@ -10,8 +10,6 @@ automations:
         args:
           label: "{{ branch | estimatedReviewTime }} time"
       - action: merge@v1
-        args:
-          rebase_on_merge: true
   mark_big_pr:
     if:
       - {{ branch.diff.size > 100 }}
