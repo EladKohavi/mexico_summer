@@ -10,6 +10,9 @@ automations:
         args:
           label: "{{ branch | estimatedReviewTime }} time"
       - action: merge@v1
+      - action: add-labels@v1
+        args:
+          labels: ["very_small_size"]
   mark_big_pr:
     if:
       - {{ branch.diff.size > 100 }}
