@@ -1,5 +1,5 @@
 automations:
-  mark_good_pr:
+ mark_good_pr:
     if:
       - {{ branch.diff.size <= 100 }}
     run:
@@ -10,14 +10,14 @@ automations:
         args:
           label: "{{ branch | estimatedReviewTime }} time"
       - action: merge@v1
-  mark_big_pr:
+ mark_big_pr:
     if:
       - {{ branch.diff.size > 100 }}
     run:
       - action: add-labels@v1
         args:
           labels: ["big_size"]
-  mark_color_pr:
+ mark_color_pr:
     if:
       - {{ branch.diff.size == 3 }}
     run:
