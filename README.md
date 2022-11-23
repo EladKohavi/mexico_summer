@@ -2,4 +2,4 @@
 
 Hello, and welcome to mexico summer:
 happening this January ...
-YAY
+FML
