@@ -9,7 +9,6 @@ automations:
       - action: add-label@v1
         args:
           label: "{{ branch | estimatedReviewTime }} time"
-      - action: merge@v1
   mark_big_pr:
     if:
       - {{ branch.diff.size > 100 }}
