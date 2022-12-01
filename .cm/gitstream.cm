@@ -5,7 +5,7 @@ automations:
     run:
       - action: add-reviewers@v1
         args:
-          reviewers: ["EladKohavi", "yeelali14"]
+          reviewers: ["EladKohavi"]
           team_reviewers: []
       - action: add-label@v1
         args:
