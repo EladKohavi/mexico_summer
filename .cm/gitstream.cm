@@ -5,7 +5,7 @@ automations:
     run:
       - action: add-reviewers@v1
         args:
-          reviewers: ["ShakedZrihen"]
+          reviewers: ["ShakedZrihen","yeelali14"]
       - action: add-label@v1
         args:
           label: "{{ branch | estimatedReviewTime }} time"
