@@ -16,12 +16,3 @@ automations:
       - action: add-labels@v1
         args:
           labels: ["big_size"]
-  mark_color_pr:
-    if:
-      - {{ pr.general_comments[0].commenter == "EladKohavi" }}
-    run:
-      - action: approve@v1
-      - action: add-label@v1
-        args:
-          label: "Brilliant label"
-          color: "#E352A3"
