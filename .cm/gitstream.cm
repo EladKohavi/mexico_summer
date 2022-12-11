@@ -11,11 +11,11 @@ automations:
           label: "{{ branch | estimatedReviewTime }} time"
   mark_big_pr:
     if:
-      - {{ branch.diff.size > 100 }}
+      - {{ branch.diff.size < 100 }}
     run:
-      - action: add-labels@v1
+      - action: add-label@v1
         args:
-          labels: ["big_size"]
+          label: "{{calc.commenter}} ok?"
   mark_color_pr:
     if:
       - {{ calc.commenter }}
