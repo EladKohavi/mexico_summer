@@ -26,4 +26,4 @@ automations:
           label: "Brilliant label"
           color: "#E352A3"          
 calc:
-  commenter: {{ pr.general_comments | match(list=['EladKohavi']) | every }}
+  commenter: {{ pr.general_comments | map(attr='commenter') | match(term='EladKohavi') | some }}
