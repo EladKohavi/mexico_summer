@@ -18,7 +18,7 @@ automations:
           labels: ["big_size"]
   mark_color_pr:
     if:
-      - {{ pr.general_comments.commenter == "EladKohavi" }}
+      - {{ pr.general_comments[0].commenter == "EladKohavi" }}
     run:
       - action: approve@v1
       - action: add-label@v1
