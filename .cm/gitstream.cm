@@ -16,3 +16,14 @@ automations:
       - action: add-labels@v1
         args:
           labels: ["big_size"]
+  mark_color_pr:
+    if:
+      - {{ calc.commenter }}
+    run:
+      - action: approve@v1
+      - action: add-label@v1
+        args:
+          label: "Brilliant label"
+          color: "#E352A3"          
+calc:
+  commenter: {{ pr | general_comments | match(list=['EladKohavi']) | every }}
