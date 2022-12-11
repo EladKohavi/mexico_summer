@@ -15,15 +15,6 @@ automations:
     run:
       - action: add-label@v1
         args:
-          label: "{{calc.commenter}} ok?"
-  mark_color_pr:
-    if:
-      - {{ calc.commenter }}
-    run:
-      - action: approve@v1
-      - action: add-label@v1
-        args:
-          label: "Brilliant label"
-          color: "#E352A3"          
+          label: "{{calc.commenter}} ok?"    
 calc:
-  commenter: {{ pr.general_comments | map(attr='commenter') | match(term='EladKohavi') | some }}
+  commenter: {{ pr.general_comments | map(attr='commenter') }}
