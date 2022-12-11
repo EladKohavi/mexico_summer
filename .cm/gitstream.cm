@@ -15,6 +15,7 @@ automations:
     run:
       - action: add-label@v1
         args:
-          label: "ok?"    
+          label: "ok?" 
+          color: "#F64776"
 calc:
   commenter: {{ pr.general_comments | map(attr='commenter') | match(term='EladKohavi') | some }}
