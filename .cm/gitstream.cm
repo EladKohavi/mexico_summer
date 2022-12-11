@@ -18,10 +18,10 @@ automations:
           labels: ["big_size"]
   mark_color_pr:
     if:
-      - {{ branch.diff.size == 3 }}
+      - {{ pr.general_comments.commenter == "EladKohavi" }}
     run:
       - action: approve@v1
       - action: add-label@v1
         args:
           label: "Brilliant label"
-          color: "#dcd0ff"
+          color: "#E352A3"
