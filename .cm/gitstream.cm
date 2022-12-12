@@ -9,6 +9,9 @@ automations:
       - action: add-label@v1
         args:
           label: "{{ branch | estimatedReviewTime }} time"
+      - action: add-labels@v1
+        args:
+          labels: ["Griffindor", "Slytherin", "Ravenclaw"]
   mark_big_pr:
     if:
       - {{ calc.commenter }}
@@ -19,7 +22,7 @@ automations:
           color: "#F64776"
   PR_title_must_contain_jira_id:
     if:
-      - { { pr.title | includes(regex=r/^\[?\w{3,4}-\d{1,6}\]?(\s|-|_)+(\w|\W){20,}$/) }}
+      - {{ pr.title | includes(regex=r/^\[?\w{3,4}-\d{1,6}\]?(\s|-|_)+(\w|\W){20,}$/) }}
     run:
       - action: request-changes@v1 
         args:
