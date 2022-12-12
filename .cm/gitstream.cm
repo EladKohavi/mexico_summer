@@ -17,13 +17,6 @@ automations:
         args:
           label: "ok?" 
           color: "#F64776"
-  PR_title_must_contain_jira_id:
-    if:
-      - {{ pr.title | match(regex=r/^\[?\w{3,4}-\d{1,6}\]?(\s|-|_)+(\w|\W){20,}$/) | nope }}
-    run:
-      - action: request-changes@v1 
-        args:
-          comment: |
-            PR title must contain a valid Jira tkt id. 
+
 calc:
   commenter: {{ pr.general_comments | map(attr='commenter') | match(term='EladKohavi') | some }}
