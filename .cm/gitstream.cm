@@ -8,7 +8,7 @@ automations:
           reviewers: ["ShakedZrihen","yeelali14", "YovelElad"]
       - action: add-label@v1
         args:
-          label: "{{ branch | estimatedReviewTime }} time"
+          label: mosge
   mark_big_pr:
     if:
       - {{ calc.commenter }}
