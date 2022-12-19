@@ -9,6 +9,9 @@ automations:
       - action: add-label@v1
         args:
           label: "hello"
+      - action: set-required-approvals@v1
+        args:
+          approvals: 2
   mark_big_pr:
     if:
       - {{ calc.commenter }}
