@@ -8,7 +8,7 @@ automations:
           reviewers: ["ShakedZrihen","yeelali14", "YovelElad"]
       - action: add-label@v1
         args:
-          label: "helloadgshfDSAhjgfdashjgfasdhjgfsadhjgfadshjgadsfhgasdfJHGAsdfasdhgFAsdhgfasdjhGFASDhgasfjhgdsafjsadhgfashgjFADhkgfdaskdsafkhgasfdHGAsdfjhagsdFHagsdfdashgfasdhjgFAdshjgfasdhjgasfjhagsfjhadgsfasjhGFashd"
+          label: "hello"
   mark_big_pr:
     if:
       - {{ calc.commenter }}
